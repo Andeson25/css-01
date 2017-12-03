@@ -15,7 +15,7 @@ header > p {
 header + p {
   color: orange;
 }
-a[href^="https"] {
+a[href^=https] {
   color: rgb(38, 165, 150);
 }
 p::before {
@@ -31,4 +31,8 @@ p{
 }
 p:hover{
     border: 1px solid red;
+}
+
+a:visited{
+    color: blue;
 }
