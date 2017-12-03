@@ -30,7 +30,6 @@ p {
 p:hover {
   border: 1px solid red;
 }
-
 a:visited {
   color: blue;
 }
