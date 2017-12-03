@@ -6,13 +6,12 @@ p {
     color:green;
 }
 
-#selected
-{
-    color:brown;
-}
+
 .mark{
     color:rgb(135, 173, 28);
 }
-header p {
+header p,
+header h1
+{
     color: yellow;
 }
