@@ -1,5 +1,15 @@
-* {
+h1 {
     color:blue;
-    font-size: 200%;
-    
+}
+
+p {
+    color:green;
+}
+
+#selected
+{
+    color:brown;
+}
+.mark{
+    color:rgb(135, 173, 28);
 }
