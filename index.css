@@ -22,3 +22,7 @@ p::before {
   content: "<";
   color: red;
 }
+p::after{
+    content: ">";
+    color: red;
+}
