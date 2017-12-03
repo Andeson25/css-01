@@ -1,11 +1,14 @@
-h1 {
+h1 
+{
     color:blue;
 }
 
-p {
+p 
+{
     color:green;
 }
-.mark{
+.mark 
+{
     color:rgb(135, 173, 28);
 }
 header p,
