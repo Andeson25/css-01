@@ -15,24 +15,24 @@ header > p {
 header + p {
   color: orange;
 }
-a[href^=https] {
+a[href^="https"] {
   color: rgb(38, 165, 150);
 }
 p::before {
   content: "<";
   color: red;
 }
-p::after{
-    content: ">";
-    color: red;
+p::after {
+  content: ">";
+  color: red;
 }
-p{
-    border: 1px solid white;
+p {
+  border: 1px solid white;
 }
-p:hover{
-    border: 1px solid red;
+p:hover {
+  border: 1px solid red;
 }
 
-a:visited{
-    color: blue;
+a:visited {
+  color: blue;
 }
