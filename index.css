@@ -19,5 +19,6 @@ a[href^="https"] {
   color: rgb(38, 165, 150);
 }
 p::before {
-  color: black;
+  content: "<";
+  color: red;
 }
