@@ -4,3 +4,32 @@ html, body {
     width: 100%;
     margin: 0;
 }
+header{
+  height: 50px;
+}
+header > nav {
+  height: 50px;
+  background-color: #424242;
+}
+div.toolbar{
+  position: relative;
+  color:#898989;
+}
+div.about_me{
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 45px; 
+  height: 50px;
+  width:200px;
+}
+div.details{
+  position: absolute;
+  background-color: black;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 45px; 
+  height: 50px;
+  width:200px;
+  left:200px
+}
