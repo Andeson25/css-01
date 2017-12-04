@@ -27,6 +27,9 @@ div.about_me {
   height: 50px;
   width: 200px;
 }
+a{
+  color:#898989;
+}
 div.details {
   position: absolute;
   background-color: black;
