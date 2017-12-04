@@ -2,12 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Allerta");
 html,
 body {
+  
   height: 100%;
   width: 100%;
   margin: 0;
   font-family: "Allerta", sans-serif;
 }
 header {
+  min-height: 60px;
   height: 7%;
 }
 header > nav {
@@ -29,7 +31,7 @@ div.buttons {
 div.about_me {
   vertical-align: middle;
   text-align: center;
-  line-height: 210%;
+  line-height: 150%;
 }
 div.about_me:hover {
   background-color: grey;
@@ -61,39 +63,40 @@ div.details {
   background-color: black;
   vertical-align: middle;
   text-align: center;
-  line-height: 210%;
+  line-height: 150%;
 }
 div.contacts {
   vertical-align: middle;
   text-align: center;
-  line-height: 210%;
+  line-height: 150%;
   border-right: 2px solid black;
 }
 div.name {
   position: absolute;
   vertical-align: middle;
   text-align: center;
-  line-height: 210%;
+  top:0;
   width: 10%;
-  right: 20%;
+  left: 60%;
 }
 div.drum_lessons {
   position: absolute;
   vertical-align: middle;
   text-align: center;
-  line-height: 150%;
+  top:0;
   width: 10%;
-  right: 10%;
+  left: 75%;
 }
 header > nav img {
   position: absolute;
   right: 0;
-  height: 7%;
-  width: 4%;
+  height: 60px;
+  width: 60px;
 }
 div.carousel {
   text-align: center;
   position: relative;
+  min-height: 850px;
   height: 93%;
   background-image: url(img/concert.jpeg);
   background-size: 100% 100%;
@@ -114,15 +117,18 @@ p.bottom_carousel_last {
 }
 #about_me {
   color: #ebebeb;
-  line-height: 60px;
+  min-width: 50%;
+  line-height: 40px;
   background-color: #444444;
   font-size: 30px;
 }
 #about_me > div.description {
   text-align: center;
+  min-height: 200px;
+  min-width: 50%;
   padding-left: 20px;
-  border-left: 250px solid rgb(180, 175, 175);
-  border-right: 250px solid rgb(180, 175, 175);
+  border-left:  50px solid rgb(180, 175, 175);
+  border-right: 50px solid rgb(180, 175, 175);
   border-top: 5px solid black;
 }
 #about_me > div.my_band {
@@ -130,7 +136,7 @@ p.bottom_carousel_last {
   grid-template-columns: 1fr 1fr;
   left: 0;
   right: 0;
-  max-height: 500px;
+  min-height: 300px;
   background-color: #606060;
 }
 #about_me > div.my_band > aside.left {
@@ -148,6 +154,7 @@ p.bottom_carousel_last {
 }
 #about_me > div.my_band > aside.right {
   position: relative;
+  border-bottom: 5px solid black;
   right: 0;
   padding-right: 40px;
   background-size: 100% 100%;
@@ -263,7 +270,7 @@ p.bottom_carousel_last {
   border-radius: 50%;
   line-height: 2em;
   box-sizing: content-box;
-  left: 70%;
+  right: 20.5%;
   top: 40%;
 }
 #details > div.image > div.circle3 {
