@@ -33,16 +33,26 @@ div.about_me {
 }
 div.about_me:hover {
   background-color: grey;
+  color: white;
 }
+ div.about_me:hover a{
+  background-color: grey;
+  color: white;
+} 
 div.contacts:hover {
   background-color: grey;
 }
+div.contacts:hover a{
+  background-color: grey;
+  color: white;
+} 
 div.details:hover {
   background-color: grey;
 }
-a:hover {
-  color:white;
-}
+div.details:hover a{
+  background-color: grey;
+  color: white;
+} 
 a {
   color: #898989;
   text-decoration: none;
@@ -78,9 +88,10 @@ header > nav img {
   position: absolute;
   right: 0;
   height: 6%;
-  width: 5%;
+  width: 4%;
 }
 div.carousel {
+  text-align: center;
   position: relative;
   height: 845px;
   background-image: url(img/concert.jpeg);
@@ -97,6 +108,7 @@ p.bottom_carousel_first {
   padding-top: 400px;
 }
 p.bottom_carousel_last {
+  text-align: center;
   padding-top: 600px;
 }
 #about_me {
@@ -106,7 +118,11 @@ p.bottom_carousel_last {
   font-size: 30px;
 }
 #about_me > div.description {
+  text-align: center;
   padding-left: 20px;
+  border-left: 250px solid rgb(180, 175, 175);
+  border-right: 250px solid rgb(180, 175, 175);
+  border-top: 5px solid black;
 }
 #about_me > div.my_band {
   display: grid;
@@ -117,9 +133,13 @@ p.bottom_carousel_last {
   background-color: #606060;
 }
 #about_me > div.my_band > aside.left {
+  text-align: center;
   position: relative;
   left: 0;
-  background-color: #606060;
+  background-color: #444444;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
   padding-left: 20px;
   font-size: 30px;
   max-height: 500px;
@@ -177,14 +197,18 @@ p.bottom_carousel_last {
   width: 100%;
   height: 300px;
   background-color: #7a7a7a;
+  border-bottom: 5px solid black;
+  
 }
 #details > div.text {
+  text-align: center;
   padding-left: 20px;
-  background-color: #7a7a7a;
+  background-color: #444444;
+  border-right: 5px solid black
 }
 #details > div.image {
   position: relative;
-  background-color: #7a7a7a;
+  background-color: #444444;
 }
 #details > div.image > img[src="img/phoneicon.png"] {
   position: absolute;
