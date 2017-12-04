@@ -80,6 +80,7 @@ div.carousel {
   position: relative;
   height: 660px;
   background-image: url(img/concert.jpeg);
+  background-size: 100% 100%;
   font-size: 20px;
   color: white;
 }
@@ -94,15 +95,16 @@ p.bottom_carousel_first {
 p.bottom_carousel_last {
   padding-top: 400px;
 }
-article {
+#about_me {
   color: #ebebeb;
+  position: relative;
   padding-left: 20px;
   line-height: 60px;
   background-color: #444444;
   font-size: 30px;
   line-height: -50px;
 }
-div.my_band {
+#about_me > div.my_band {
   position: absolute;
   left: 0;
   right: 0;
@@ -110,7 +112,7 @@ div.my_band {
   width: 100%;
   background-color: #606060;
 }
-div.my_band > aside.left {
+#about_me > div.my_band > aside.left {
   position: absolute;
   left: 0;
   width: 50%;
@@ -120,7 +122,7 @@ div.my_band > aside.left {
   font-size: 30px;
   color: #ebebeb;
 }
-div.my_band > aside.right {
+#about_me > div.my_band > aside.right {
   position: absolute;
   right: 0;
   width: 50%;
@@ -129,7 +131,10 @@ div.my_band > aside.right {
   background-repeat: no-repeat;
   background-image: url(img/rockonslogo.jpg);
 }
-div.my_band>aside.right > a[href="https://www.facebook.com/rockons.band/"] {
+#about_me
+  > div.my_band
+  > aside.right
+  > a[href="https://www.facebook.com/rockons.band/"] {
   position: absolute;
   background-image: url(img/fblogo.png);
   background-size: 50px 50px;
@@ -138,7 +143,10 @@ div.my_band>aside.right > a[href="https://www.facebook.com/rockons.band/"] {
   left: 0;
   bottom: 0;
 }
-div.my_band>aside.right > a[href="https://www.youtube.com/channel/UCJR6qE5x5T3QgCYodozj6FA/featured"] {
+#about_me
+  > div.my_band
+  > aside.right
+  > a[href="https://www.youtube.com/channel/UCJR6qE5x5T3QgCYodozj6FA/featured"] {
   position: absolute;
   background-image: url(img/youtubelogo.png);
   background-size: 80px 50px;
@@ -148,7 +156,10 @@ div.my_band>aside.right > a[href="https://www.youtube.com/channel/UCJR6qE5x5T3Qg
   right: 0;
   bottom: 0;
 }
-div.my_band>aside.right > a[href="https://www.instagram.com/rockons.lviv/"] {
+#about_me
+  > div.my_band
+  > aside.right
+  > a[href="https://www.instagram.com/rockons.lviv/"] {
   position: absolute;
   background-image: url(img/instalogo.png);
   background-repeat: no-repeat;
@@ -157,4 +168,14 @@ div.my_band>aside.right > a[href="https://www.instagram.com/rockons.lviv/"] {
   width: 50px;
   left: 45%;
   bottom: 0;
+}
+#details {
+  width: 100%;
+  height: 260px;
+}
+#details > div {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 260px;
 }
