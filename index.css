@@ -11,44 +11,40 @@ header {
   height: 50px;
 }
 header > nav {
+  display: grid;
+  grid-template-columns: 1fr;
   height: 50px;
   background-color: #424242;
 }
 div.toolbar {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   font-size: 20px;
   color: #898989;
 }
+div.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 div.about_me {
-  position: absolute;
   vertical-align: middle;
   text-align: center;
   line-height: 45px;
-  height: 50px;
-  width: 200px;
 }
 a {
   color: #898989;
   text-decoration: none;
 }
 div.details {
-  position: absolute;
   background-color: black;
   vertical-align: middle;
   text-align: center;
   line-height: 45px;
-  height: 50px;
-  width: 200px;
-  left: 200px;
 }
 div.contacts {
-  position: absolute;
   vertical-align: middle;
   text-align: center;
   line-height: 45px;
-  height: 50px;
-  width: 200px;
-  left: 400px;
   border-right: 2px solid black;
 }
 div.name {
@@ -56,9 +52,8 @@ div.name {
   vertical-align: middle;
   text-align: center;
   line-height: 45px;
-  height: 50px;
   width: 200px;
-  left: 800px;
+  right: 15%;
 }
 div.drum_lessons {
   position: absolute;
@@ -66,9 +61,8 @@ div.drum_lessons {
   text-align: center;
   line-height: 20px;
   padding-top: 5px;
-  height: 50px;
   width: 100px;
-  left: 1000px;
+  right: 10%;
 }
 header > nav img {
   position: absolute;
@@ -78,7 +72,7 @@ header > nav img {
 }
 div.carousel {
   position: relative;
-  height: 660px;
+  height: 845px;
   background-image: url(img/concert.jpeg);
   background-size: 100% 100%;
   font-size: 20px;
@@ -90,43 +84,41 @@ div.carousel p {
   padding-left: 50px;
 }
 p.bottom_carousel_first {
-  padding-top: 250px;
+  padding-top: 400px;
 }
 p.bottom_carousel_last {
-  padding-top: 400px;
+  padding-top: 600px;
 }
 #about_me {
   color: #ebebeb;
-  position: relative;
-  padding-left: 20px;
   line-height: 60px;
   background-color: #444444;
   font-size: 30px;
-  line-height: -50px;
+}
+#about_me > div.description {
+  padding-left: 20px;
 }
 #about_me > div.my_band {
-  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   left: 0;
   right: 0;
-  height: 260px;
-  width: 100%;
+  max-height: 500px;
   background-color: #606060;
 }
 #about_me > div.my_band > aside.left {
-  position: absolute;
+  position: relative;
   left: 0;
-  width: 50%;
-  height: 100%;
   background-color: #606060;
   padding-left: 20px;
   font-size: 30px;
+  max-height: 500px;
   color: #ebebeb;
 }
 #about_me > div.my_band > aside.right {
-  position: absolute;
+  position: relative;
   right: 0;
-  width: 50%;
-  height: 100%;
+  padding-right: 40px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: url(img/rockonslogo.jpg);
@@ -170,12 +162,118 @@ p.bottom_carousel_last {
   bottom: 0;
 }
 #details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 260px;
+  height: 300px;
+  background-color: #7a7a7a;
 }
-#details > div {
+#details > div.text {
+  padding-left: 20px;
+  background-color: #7a7a7a;
+}
+#details > div.image {
+  position: relative;
+  background-color: #7a7a7a;
+}
+#details > div.image > img[src="img/phoneicon.png"] {
   position: absolute;
+  width: 7%;
+  height: 16%;
+  top: 7%;
+  left: 7%;
+}
+#details > div.image > img[src="img/discussionicon.png"] {
+  position: absolute;
+  width: 7%;
+  height: 16%;
+  top: 43%;
+  right:6%;
+}
+#details > div.image > img[src="img/scheduleicon.png"] {
+  position: absolute;
+  width: 7%;
+  height: 16%;
+  bottom: 15%;
+  left:12%;
+}
+#details > div.image > div.line1 {
+  position: absolute;
+  top: 14%;
+  left: 25%;
+  width: 50%;
+  height: 1.5%;
   background-color: black;
-  width: 100%;
-  height: 260px;
+}
+#details > div.image > div.circle1 {
+  z-index: 1;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  box-sizing: initial;
+  background: grey;
+  border: 0.1em solid #666;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 2em;
+  box-sizing: content-box;
+  left: 17%;
+  top: 3%;
+}
+#details > div.image > div.line2 {
+  position: absolute;
+  top: 14%;
+  left: 75%;
+  width: 0.5%;
+  height: 30%;
+  background-color: black;
+}
+#details > div.image > div.circle2 {
+  z-index: 1;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  box-sizing: initial;
+  background: grey;
+  border: 0.1em solid #666;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 2em;
+  box-sizing: content-box;
+  left: 71%;
+  top: 40%;
+}
+#details > div.image > div.line3 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+  height: 1.5%;
+  background-color: black;
+}
+#details > div.image > div.line4 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 0.5%;
+  height: 80px;
+  background-color: black;
+}
+#details > div.image > div.circle3 {
+  z-index: 1;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  box-sizing: initial;
+  background: grey;
+  border: 0.1em solid #666;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 2em;
+  box-sizing: content-box;
+  left: 21%;
+  bottom: 12%;
 }
