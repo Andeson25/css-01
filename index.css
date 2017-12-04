@@ -1,35 +1,82 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
-header{
+header {
   height: 50px;
 }
 header > nav {
   height: 50px;
   background-color: #424242;
 }
-div.toolbar{
+div.toolbar {
   position: relative;
-  color:#898989;
+  font-size: 20px;
+  color: #898989;
 }
-div.about_me{
+div.about_me {
   position: absolute;
   vertical-align: middle;
   text-align: center;
-  line-height: 45px; 
+  line-height: 45px;
   height: 50px;
-  width:200px;
+  width: 200px;
 }
-div.details{
+div.details {
   position: absolute;
   background-color: black;
   vertical-align: middle;
   text-align: center;
-  line-height: 45px; 
+  line-height: 45px;
   height: 50px;
-  width:200px;
-  left:200px
+  width: 200px;
+  left: 200px;
+}
+div.contacts {
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 45px;
+  height: 50px;
+  width: 200px;
+  left: 400px;
+  border-right: 2px solid black;
+}
+div.name {
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 45px;
+  height: 50px;
+  width: 200px;
+  left: 800px;
+}
+div.drum_lessons {
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 20px;
+  padding-top: 5px;
+  height: 50px;
+  width: 100px;
+  left: 1000px;
+}
+header > nav img {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: 50px;
+}
+div.carousel {
+  position: relative;
+  height: 660px;
+  background-image: url(img/concert.jpeg);
+  font-size: 20px;
+  color:white;
+}
+div.carousel p{
+  position: absolute;
 }
