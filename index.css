@@ -52,17 +52,15 @@ div.name {
   vertical-align: middle;
   text-align: center;
   line-height: 210%;
-  width: 200px;
+  width: 10%;
   right: 20%;
 }
 div.drum_lessons {
   position: absolute;
-  vertical-align: middle;
   text-align: center;
-  line-height: 100%;
-  padding-top: 5px;
-  width: 100px;
+  width: 10%;
   right: 10%;
+  top:-0.5%;
 }
 header > nav img {
   position: absolute;
