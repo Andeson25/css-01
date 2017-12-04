@@ -29,6 +29,7 @@ div.about_me {
 }
 a{
   color:#898989;
+  text-decoration: none;
 }
 div.details {
   position: absolute;
