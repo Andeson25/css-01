@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Allerta");
 html,
 body {
-  
   height: 100%;
   width: 100%;
   margin: 0;
@@ -37,24 +36,24 @@ div.about_me:hover {
   background-color: grey;
   color: white;
 }
- div.about_me:hover a{
+div.about_me:hover a {
   background-color: grey;
   color: white;
-} 
+}
 div.contacts:hover {
   background-color: grey;
 }
-div.contacts:hover a{
+div.contacts:hover a {
   background-color: grey;
   color: white;
-} 
+}
 div.details:hover {
   background-color: grey;
 }
-div.details:hover a{
+div.details:hover a {
   background-color: grey;
   color: white;
-} 
+}
 a {
   color: #898989;
   text-decoration: none;
@@ -75,7 +74,7 @@ div.name {
   position: absolute;
   vertical-align: middle;
   text-align: center;
-  top:0;
+  top: 0;
   width: 10%;
   left: 60%;
 }
@@ -83,7 +82,7 @@ div.drum_lessons {
   position: absolute;
   vertical-align: middle;
   text-align: center;
-  top:0;
+  top: 0;
   width: 10%;
   left: 75%;
 }
@@ -127,7 +126,7 @@ p.bottom_carousel_last {
   min-height: 200px;
   min-width: 50%;
   padding-left: 20px;
-  border-left:  50px solid rgb(180, 175, 175);
+  border-left: 50px solid rgb(180, 175, 175);
   border-right: 50px solid rgb(180, 175, 175);
   border-top: 5px solid black;
 }
@@ -206,13 +205,12 @@ p.bottom_carousel_last {
   height: 300px;
   background-color: #7a7a7a;
   border-bottom: 5px solid black;
-  
 }
 #details > div.text {
   text-align: center;
   padding-left: 20px;
   background-color: #444444;
-  border-right: 5px solid black
+  border-right: 5px solid black;
 }
 #details > div.image {
   position: relative;
@@ -230,14 +228,14 @@ p.bottom_carousel_last {
   width: 7%;
   height: 16%;
   top: 43%;
-  right:6%;
+  right: 6%;
 }
 #details > div.image > img[src="img/scheduleicon.png"] {
   position: absolute;
   width: 7%;
   height: 16%;
   bottom: 15%;
-  left:12%;
+  left: 12%;
 }
 
 #details > div.image > div.circle1 {
@@ -320,4 +318,49 @@ p.bottom_carousel_last {
   width: 0.7%;
   height: 20%;
   background-color: black;
+}
+#feedback {
+  width: 100%;
+  height: 600px;
+  background-image: url(img/blureddrums.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#cards {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+#cards > div.card_first {
+  height: 500px;
+  width: 30%;
+  text-align: center;
+  color: red;
+  background-color: white;
+  box-sizing: border-box;
+  border: 3px solid red;
+  margin-left: 5%;
+}
+#cards > div.card_second {
+  height: 500px;
+  width: 30%;
+  text-align: center;
+  color: red;
+  background-color: white;
+  box-sizing: border-box;
+  border: 3px solid red;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#cards > div.card_third {
+  height: 500px;
+  width: 30%;
+  text-align: center;
+  color: red;
+  background-color: white;
+  box-sizing: border-box;
+  border: 3px solid red;
+  margin-right: 5%;
 }
