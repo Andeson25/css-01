@@ -95,6 +95,7 @@ div.carousel {
   min-height: 650px;
   background-image: url(img/concert.jpeg);
   background-size:cover;
+  background-position: center center;
   color: white;
 }
 div.carousel > div.text > p {
@@ -151,6 +152,7 @@ p.paragraph{
   border-bottom: 5px solid black;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   background-image: url(img/rockonslogo.jpg);
 }
 #about_me
