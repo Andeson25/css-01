@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
-@import url("https://fonts.googleapis.com/css?family=Allerta");
+/* @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Allerta"); */
 html,
 body {
-  height: 100%;
-  width: 100%;
   margin: 0;
   font-family: "Allerta", sans-serif;
+  min-width: 400px;
 }
 header {
-  min-height: 60px;
-  height: 7%;
+  height: 60px;
+  border-bottom: 5px solid black;
 }
 header > nav {
   display: grid;
@@ -27,16 +26,15 @@ div.buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-div.about_me {
-  vertical-align: middle;
+div.aboutme {
+  padding-top: 15px;
   text-align: center;
-  line-height: 150%;
 }
-div.about_me:hover {
+div.aboutme:hover {
   background-color: grey;
   color: white;
 }
-div.about_me:hover a {
+div.aboutme:hover a {
   background-color: grey;
   color: white;
 }
@@ -49,6 +47,7 @@ div.contacts:hover a {
 }
 div.details:hover {
   background-color: grey;
+  text-align: center;
 }
 div.details:hover a {
   background-color: grey;
@@ -59,28 +58,28 @@ a {
   text-decoration: none;
 }
 div.details {
+  padding-top: 15px;
   background-color: black;
   vertical-align: middle;
   text-align: center;
   line-height: 150%;
 }
 div.contacts {
-  vertical-align: middle;
+  padding-top: 15px;
   text-align: center;
-  line-height: 150%;
-  border-right: 2px solid black;
+  border-right: 5px solid black;
 }
 div.name {
   position: absolute;
-  vertical-align: middle;
+  padding-top: 10px;
   text-align: center;
   top: 0;
   width: 10%;
   left: 60%;
 }
 div.drum_lessons {
+  padding-top: 10px;
   position: absolute;
-  vertical-align: middle;
   text-align: center;
   top: 0;
   width: 10%;
@@ -93,69 +92,63 @@ header > nav img {
   width: 60px;
 }
 div.carousel {
-  text-align: center;
-  position: relative;
-  min-height: 850px;
-  height: 93%;
+  min-height: 650px;
   background-image: url(img/concert.jpeg);
   background-size: 100% 100%;
-  font-size: 20px;
   color: white;
 }
-div.carousel p {
-  position: absolute;
-  font-size: 60px;
-  padding-left: 50px;
+div.carousel > div.text > p {
+  margin-top: 0;
+  font-size: 400%;
 }
-p.bottom_carousel_first {
-  padding-top: 400px;
+div.carousel > div.text {
+  size: 100%;
+  height: 100%;
+  padding-left: 5%;
 }
-p.bottom_carousel_last {
+p.main {
+  font-family: "Allerta Stencil", sans-serif;
   text-align: center;
-  padding-top: 600px;
 }
+p.paragraph{
+  padding-top: 50px;
+}
+
 #about_me {
   color: #ebebeb;
-  min-width: 50%;
-  line-height: 40px;
+  height: 50%;
   background-color: #444444;
   font-size: 30px;
 }
 #about_me > div.description {
   text-align: center;
-  min-height: 200px;
-  min-width: 50%;
-  padding-left: 20px;
+
+  min-height: 40%;
   border-left: 50px solid rgb(180, 175, 175);
   border-right: 50px solid rgb(180, 175, 175);
   border-top: 5px solid black;
 }
 #about_me > div.my_band {
+  height: 60%;
+  min-height: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  left: 0;
-  right: 0;
-  min-height: 300px;
   background-color: #606060;
 }
 #about_me > div.my_band > aside.left {
   text-align: center;
-  position: relative;
-  left: 0;
+
+  padding-top: 7%;
   background-color: #444444;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
   border-right: 5px solid black;
-  padding-left: 20px;
   font-size: 30px;
-  max-height: 500px;
   color: #ebebeb;
 }
 #about_me > div.my_band > aside.right {
   position: relative;
   border-bottom: 5px solid black;
-  right: 0;
-  padding-right: 40px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: url(img/rockonslogo.jpg);
@@ -195,14 +188,14 @@ p.bottom_carousel_last {
   background-size: 50px 50px;
   height: 50px;
   width: 50px;
-  left: 45%;
+  left: 50%;
   bottom: 0;
 }
 #details {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: 300px;
+  height: 100%;
+  min-height: 300px;
   background-color: #7a7a7a;
   border-bottom: 5px solid black;
 }
@@ -331,7 +324,7 @@ p.bottom_carousel_last {
   width: 100%;
   height: 600px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #cards > div.card_first {
   height: 500px;
